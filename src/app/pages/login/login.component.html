@@ -1,0 +1,16 @@
+<h1 class="text-2xl font-semibold">Login</h1>
+<form class="flex flex-col gap-8 w-80" [formGroup]="form" (submit)="onSubmit()">
+  <input type="email" hlmInput placeholder="Email" formControlName="email" />
+  <input
+    type="password"
+    hlmInput
+    placeholder="Password"
+    formControlName="password"
+  />
+  <input
+    type="submit"
+    hlmInput
+    class="cursor-pointer bg-sky-900 text-white outline-none hover:outline-sky-400"
+    value="Submit"
+  />
+</form>
